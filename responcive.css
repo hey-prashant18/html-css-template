@@ -1,0 +1,94 @@
+#check {
+    display: none;
+}
+
+@media (max-width: 680px) {
+
+    .icons {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .navbar {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        background: rgb(124, 192, 218);
+        transition: height .28s ease;
+        z-index: 998;
+    }
+
+    #check:checked~.navbar {
+        height: 220px;
+    }
+
+    #close-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: inline-block;
+    }
+
+    .navbar a {
+        display: block;
+        color: #fff;
+        padding: 14px 0;
+        text-align: center;
+        font-size: 1.05rem;
+    }
+
+    .header {
+        padding: 12px 4%;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .input {
+        width: 90%;
+        left: 50%;
+        bottom: 90px;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+    }
+
+    #text {
+        width: 70%;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .fae {
+        width: 20%;
+        height: 45px;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .card {
+        width: 48%;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+
+    .divhp {
+        line-height: 72px;
+    }
+}
